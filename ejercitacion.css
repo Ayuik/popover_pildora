@@ -1,0 +1,27 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(131, 236, 131) ;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+[popover] {
+    background-color: blueviolet;
+}
+
+[popover]::backdrop {
+    background: #000a;
+    backdrop-filter: blur(5px);
+}
+
+[popover]:popover-open{
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+
+span:hover + [popover]{
+    display:block;
+}

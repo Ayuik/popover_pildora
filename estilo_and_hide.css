@@ -1,0 +1,20 @@
+[popover] {
+    background: #222;
+    border: 0;
+    border-bottom: 5px solid gold;
+    color: white;
+    font-family: Jost;
+    font-size: 1.2rem;
+    padding: 0.05rem 1.25rem;
+  }
+  
+  [popover]::backdrop {
+    background: #000a;
+    backdrop-filter: blur(5px);
+  }
+  
+  [popover]:popover-open {
+    color: gold;
+  }
+  
+  
